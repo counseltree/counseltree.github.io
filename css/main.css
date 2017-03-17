@@ -79,3 +79,8 @@ iframe {
 .form-control {
 	width:800px;
 }
+
+.form-paragraph {
+	color: grey;
+	font-size: 10px;
+}
