@@ -1,0 +1,127 @@
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>Welcome to counseltree</title>
+
+<!-- Google Font: Questrial -->
+	
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	
+<!-- Latest compiled and minified CSS, Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+
+<script>
+function postContactToGoogle() {
+	var name=$('#name').val();
+	var email=$('#email').val();
+	var role=$('#role').val();
+	var phone=$('#phone').val();
+	var question=$('#question').val();
+	var other=$('#other').val();
+$.ajax({
+url:"https://docs.google.com/forms/d/e/1FAIpQLSezDPOBR1EnX9wHZiSfvCmZLVVJNDEx9P7GjUYHSuTScqsMug/formResponse",data:{"entry.1033867345":name,"entry.1922753883":email,"entry.1481280500":role,"entry.442283225":phone,"entry.976111059":question,"entry.1618255132":other},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+});
+}
+</script>
+
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="../counseltree_black.png" height="60px" width="65px" style="margin-top:-19px"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Login <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Register</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subjects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="What to learn?">
+        </div>
+        <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+      </form>
+  
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+
+<form id="formRequest">
+
+	
+	<div class = "form-group">
+		<div class="col-sm-6"><label for="name">Name</label>
+			<input type="text" name="name" id="name" placeholder="Full Name" class = "col-xs-3 form-control"/></div>
+
+		<div class="col-sm-6"><label for="email">Email</label>
+			<input type="text" name="email" id="email" placeholder="you@email.com" class="col-xs-3 form-control"/>
+	</div>
+
+	<div class = "form-group">
+		<div class="col-sm-6"><label>Your Role/ Department</label>
+			<input type="text" name="role" id="role" placeholder="Title/ Role" class = "form-control"/></div>
+		
+	
+		<div class="col-sm-6"><label>Phone</label>
+			<input type="tel" name="phone" id="phone" maxlength="10" placeholder="Digits only" class="form-control"/></div>
+	</div>
+
+		<div class="form-group">
+		  <div class = "col-sm-12">
+			<label for="comment">What can we answer for you today?</label>
+			  <textarea name="question" id="question" form="formRequest" rows="4" placeholder="Write your query here..." class="form-control"></textarea></div></div>
+
+		<div class = "form-group">
+			<div class = "col-sm-12">
+			<label>Other info about your business (e.g. size, industry, etc.)</label>
+				<input type="text" name="other" id="other" placeholder="Other" class = "form-control"/>
+			<p>The more information you provide, the better legal information we can provide.</p>
+			</div></div>
+	
+<center>
+<input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Submit" class = "btn btn-success"/>
+<input type="reset" value="Reset" class = "btn btn-default"/>
+</center>
+
+</form>
+
+	
+</body>
+</html>
