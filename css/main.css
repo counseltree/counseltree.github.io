@@ -21,10 +21,9 @@
 /* Main marketing message and sign up button */
 .jumbotron {
     background-image: url("/images/jumbotron-library.jpg");
-    background-position: -50px -220px;
     background-size: cover;
     margin-top:-20px;
-    height:425px;
+    height:500px;
 }
 .jumbotron .btn {
   padding: .75rem 1.5rem;
