@@ -20,7 +20,7 @@
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    background-image:url("/images/logo-jumbotron.png");
+    background-image: url("/images/logo-jumbotron.png");
     background-position: -50px -220px;
     background-size: cover;
     margin-top:-20px;
