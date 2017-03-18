@@ -85,3 +85,23 @@ iframe {
 	color: grey;
 	font-size: 10px;
 }
+
+.card-block {
+	width:75%;
+}
+
+.email-submit {
+	width: 75%;
+}
+footer {
+	background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+footer a {
+	color: white;
+}
