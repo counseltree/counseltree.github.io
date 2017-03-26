@@ -133,3 +133,8 @@ footer a:hover {
 	text-decoration: none;
     color:grey;
 }
+
+.tour-step-image {
+    padding-bottom: 10px;
+    width:95%;
+}
