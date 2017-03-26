@@ -1,24 +1,8 @@
 ---
 layout: default
+title: about
+active: about
 ---
-
-<script>
-
-    $(document).ready(function() {
-        
-        var pathname = window.location.pathname;
-        
-        $("#navlist a").each(function(index) {
-            if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1)
-                $(this).addClass("active");
-        });
-          if ($("a.current").length == 0)
-            $("a#index").addClass("active");
-        
-    });
-    
-</script>
-
    
     <div class="jumbotron-about">
 	   <div class="container">
@@ -104,6 +88,5 @@ layout: default
                </form>
             </div>
 	           <br>
-                <br>
             </center>
 	      
