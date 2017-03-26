@@ -115,6 +115,12 @@ iframe {
 .email-submit {
 	width: 75%;
 }
+
+.list-group-item:hover {
+    background-color: dimgrey;
+    
+}
+
 footer {
 	background-color: black;
     position: absolute;
