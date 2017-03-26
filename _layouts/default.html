@@ -43,8 +43,11 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav" id="navlist">
 			
-              <li><a id = "index" href="http://counseltree.github.io">Home</a></li>
-			
+              {% if page.active == "about" %}
+              <li><a href="http://counseltree.github.io">Home</a></li>
+              {% else %}
+              <li><a href="http://counseltree.github.io">Home</a></li>
+              {% endif %}
               {% if page.active == "about" %}
               <li class="active"><a href="about.html">About Us</a></li>
               {% else %}
