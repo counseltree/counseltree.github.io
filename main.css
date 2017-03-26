@@ -118,7 +118,7 @@ iframe {
 
 .list-group-item:hover {
     background-color: #e6e9ef;
-    transform: scale(2.0)
+    transform: scale(1.1)
     
 }
 
