@@ -3,16 +3,32 @@ layout: default
 title: home
 active: home
 ---
-	
+
+<script>
+    function postContactToGoogle() {
+	var name=$('#name').val();
+	var email=$('#email').val();
+	var role=$('#role').val();
+	var phone=$('#phone').val();
+	var question=$('#question').val();
+	var other=$('#other').val();
+$.ajax({
+url:"https://docs.google.com/forms/d/e/1FAIpQLSezDPOBR1EnX9wHZiSfvCmZLVVJNDEx9P7GjUYHSuTScqsMug/formResponse",data:{"entry.1033867345":name,"entry.1922753883":email,"entry.1481280500":role,"entry.442283225":phone,"entry.976111059":question,"entry.1618255132":other},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+});
+}
+
+
+</script>
+
 <body>
-	
+
 <div class="jumbotron">
 	<div class="container">
 		<div class="col-sm-6"><h2 style="color:white">Are you a small business with a legal question?</h2>
 		<h3 style="color:white">Let <strong style="color:lightgreen">counseltree</strong> help.</h3>
 			<br/>
 			<p style="color:white">Ask a question and we'll have an answer and the resources you need to continue running your business within 24 hours.</p>
-			
+
 	</div>
 
 	<div class="col-sm-6"><form id="formRequest" style="color:lightgray">
@@ -51,7 +67,7 @@ active: home
 			<input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Submit" class = "btn btn-success"/>
 			<input type="reset" value="Reset" class = "btn btn-default"/>
 			</center>
-		
+
 		</form>
 		</div>
 	</div>
@@ -62,10 +78,10 @@ active: home
             <h1><strong>How it works</strong></h1>
             <div class="alert alert-success" role="alert">While we plan on offering Counseltree as a paid subscription service, right now we are in a free, invite-only test phase. Enjoy our free product, and let us know how we can improve! Northwestern Law students will attend to your question and provide you with legal research aimed at helping you answer your legal questions.</div>
         </center>
-		
+
 
     <div class = "row">
-    	
+
 		<div class="col-md-6"><center>
 			<div class="card">
 			  <div class="card-block">
@@ -87,15 +103,15 @@ active: home
 			  </div>
 			</div></center>
 		</div>
-		
-		
+
+
 	   </div>
-	   
+
 	   <br/>
 	   <br/>
-	   
+
 	       <div class = "row">
-    	
+
 		<div class="col-md-6"><center>
 			<div class="card">
 			  <div class="card-block">
@@ -117,14 +133,14 @@ active: home
 			  </div>
 			</div></center>
 		</div>
-		
-		
+
+
 	   </div>
-	   
+
 	   <br/>
 	   <br/>
 	   <hr>
-        
+
         <h3>Questions We're Answering for Other Customers:</h3>
         <p>Ask us the legal question that's been burning a hole through your brain. We'll get the answers you need so that you have the peace of mind knowing your business is safe.</p>
         <ul class="list-group">
@@ -133,10 +149,10 @@ active: home
             <li class="list-group-item"><i class="fa fa-angle-double-right" aria-hidden="true"></i> What terms and conditions do I need to include in my website's privacy policy?</li>
             <li class="list-group-item"><i class="fa fa-angle-double-right" aria-hidden="true"></i> What terms, representations and warranties do I need to include in my supplier agreements?</li>
             <li class="list-group-item"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Help with statutory or regulatory interpretations.</li>
-        
+
         </ul>
-        
-	   
+
+
 	<center> <!--email subscribe div -->
 		<div class="email-submit">
 			<br/>
@@ -160,4 +176,3 @@ active: home
 		   </form>
 		</div>
 	</center>
-
