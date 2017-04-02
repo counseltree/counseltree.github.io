@@ -1,13 +1,13 @@
 <head>
-	
+
 <link rel="icon" href="../counseltree.github.io/images/logo_circle.png">
 <meta charset = "UTF-8">
 <title>Legal Education from Counseltree</title>
 <link rel="stylesheet" type="text/css" href="main.css">
 <!-- Google Font: Questrial -->
-	
+
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-	
+
 <!-- Latest compiled and minified CSS, Bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -19,10 +19,10 @@
 
 <!-- FontAwesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    
+
 </head>
 
 <body>
@@ -42,7 +42,7 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav" id="navlist">
-			
+
               {% if page.active == "home" %}
               <li class="active"><a href="http://counseltree.github.io">Home</a></li>
               {% else %}
@@ -58,18 +58,23 @@
               {% else %}
               <li><a href="tour.html">Take a Tour</a></li>
               {% endif %}
-			  {% if page.active == "testimonial" %}
+			  		{% if page.active == "testimonial" %}
               <li class="active"><a href="testimonial.html">Testimonials</a></li>
               {% else %}
               <li><a href="testimonial.html">Testimonials</a></li>
               {% endif %}
-              
+							{% if page.active == "content" %}
+							<li class="active"><a href="content.html">Content</a></li>
+							{% else %}
+							<li><a href="content.html">Content</a></li>
+							{% endif %}
+
             </ul>
-			
+
 		</div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
     </nav>
-    
+
     {{ content }}
 
       <footer style="color:white"> <!-- Footer -->
@@ -84,5 +89,5 @@
 		</center>
 		</div>
       </footer>
-	   
+
 </body>
