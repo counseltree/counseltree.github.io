@@ -21,7 +21,7 @@ active: home
 
 <body>
 
-  <div class="modal fade" id="mymodal">
+  <div class="modal fade" id="myModal" tabindex="-1">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -194,9 +194,11 @@ active: home
 		   </form>
 		</div>
 	</center>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
- $('#mymodal').modal('show');
+  $(document).ready(function() {
+    $('#myModal').modal('show');
+  });
 </script>
 </body>
 
