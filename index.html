@@ -17,10 +17,6 @@ active: home
   });
   }
 
-$(document).ready(function () {
-  $('#modal').modal('show');
-});
-
 </script>
 
 <body>
@@ -200,9 +196,13 @@ $(document).ready(function () {
 	</center>
 
 </body>
+
 <link href="https://api.motion.ai/sdk/webchat.css" rel="stylesheet" type="text/css">
 <script src="https://api.motion.ai/sdk/webchat.js"></script>
 <script>
    motionAI_Init('44340?color=62a8ea&sendBtn=SEND&inputBox=Type%20something...&token=01b5ae5b1ed10382bec9d26e81f3a661',true,400,470,'https://counseltree.github.io/images/botbtn.png');
    /* You may also invoke motionAI_Open() to manually open the modal. */
+   $(document).ready(function () {
+     $('#modal').modal('show');
+   });
 </script>
