@@ -21,8 +21,8 @@
 /* Main marketing message and sign up button */
 .jumbotron {
     background-image: url("images/jumbotron-library.jpg");
-	background-size: 100%;
-	width: 100%;
+		background-size: 100%;
+		width: 100%;
     margin-top:-20px;
     height:510px;
 }
@@ -85,7 +85,7 @@ iframe {
     margin-top:-20px;
     height:275px;
     background-position: -100px 310px;
-		background-size: cover;
+		background-size: 100%;
 		color:white;
 
 }
