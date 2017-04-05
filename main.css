@@ -80,7 +80,7 @@ iframe {
 }
 
 .jumbotron-about {
-    background-color: #5cb85c;
+    background-image: url("images/jumbotron-about.jpg");
 		width: 100%;
     margin-top:-20px;
     height:275px;
