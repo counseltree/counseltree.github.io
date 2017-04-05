@@ -85,6 +85,7 @@ iframe {
     margin-top:-20px;
     height:275px;
     background-position: -100px 310px;
+		background-size: cover;
 		color:white;
 
 }
