@@ -6,6 +6,12 @@
 	margin-bottom: 5px;
 }
 
+.modal-form {
+		float: left;
+		width: 175px;
+
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;
