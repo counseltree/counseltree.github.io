@@ -13,8 +13,8 @@
 }
 
 
-a.btn-messenger {
-	color: #0080ff !important;
+a.btn-info, .btn-info {
+	color: white !important;
 }
 a:hover.btn-messenger {
 	text-decoration: none !important;
