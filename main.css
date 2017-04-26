@@ -24,6 +24,9 @@ a.btn-messenger {
 a:hover.btn-messenger {
 	text-decoration: none;
 }
+a:visited.btn-messenger {
+	color: #0080ff;
+}
 
 /* Custom page footer */
 .footer {
