@@ -12,24 +12,17 @@
 
 }
 
-.btn-messenger {
-	color: #0080ff;
-	background-color: white;
-	font-size:125%;
-}
 
 a.btn-messenger {
-	color: #0080ff;
+	color: #0080ff !important;
 }
 a:hover.btn-messenger {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 a:visited.btn-messenger {
-	color: #0080ff;
+	color: #0080ff !important;
 }
-.btn-messenger:hover {
-	color: #fcfdff;
-}
+
 
 /* Custom page footer */
 .footer {
