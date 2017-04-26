@@ -14,8 +14,8 @@
 
 .btn-messenger {
 	color: #0080ff;
-	background-color: white;
-	font-size:150%;
+	background-color: white !important;
+	font-size:125%;
 }
 
 
