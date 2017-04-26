@@ -14,12 +14,15 @@
 
 .btn-messenger {
 	color: #0080ff;
-	background-color: white !important;
+	background-color: white;
 	font-size:125%;
 }
 
 a.btn-messenger {
 	color: #0080ff;
+}
+a:hover.btn-messenger {
+	text-decoration: none;
 }
 
 /* Custom page footer */
