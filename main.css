@@ -13,14 +13,8 @@
 }
 
 
-a.btn-info, .btn-info {
-	color: white !important;
-}
-a:hover.btn-messenger {
-	text-decoration: none !important;
-}
-a:visited.btn-messenger {
-	color: #0080ff !important;
+.btn-info {
+	font-size: 16px;
 }
 
 
