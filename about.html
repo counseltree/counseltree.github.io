@@ -19,7 +19,7 @@ active: about
     </div>
     <div class = "container">
         <div>
-        <h3>We're a team of Northwestern Law students focused on making legal education accessible to entrepreneurs with growing businesses so they can address legal issues and get back to running their business.</h3>
+        <h3>We're a team of Northwestern University School of Law students focused on making legal education accessible to entrepreneurs with growing businesses so they can address legal issues and get back to running their business.</h3>
         <p class=about>Legal questions are extremely common in day-to-day business operations at growing companies. Leaders often struggle with how to resolve these questions because the resources available to them are ill-suited to aiding the decision-making process. For most issues, effective managers don’t need to be legal experts, they simply need education on the legal risks at play so they can make an informed decision. "Khan Academy for the Law." That's our tagline, and we're sticking to it.</p>
         <p class=about>Reputable resources that provide a wide scope of service (in-house general counsel or calling an attorney at an expensive firm) are prohibitively expensive for our target segment. These companies have likewise outgrown the scope of less-expensive (and less personalized) online legal resources.</p>
         <p class=about>Managers need an educational resource that provides them with (1) the information necessary to move forward with their business or (2) the peace of mind that utilizing a more expensive legal resource is a prudent business decision. Counseltree aims to provide that to businesses.</p>
@@ -32,48 +32,64 @@ active: about
         <p class="about">We've developed a few simple products to begin providing quick and personal legal advice to entrepreneurs, but we're nowhere near finished. We envision a future where a user can log in, access personalized learning modules, and have access to a large library of content, educating users on a variety of legal issues. An AI-powered recommendation algorithm will help sort users through all of this content, finding the modules most relevant to the user, while also helping identify legal risks the user may not have known his or her business had. </p>
 
         <center>
-            <h2>Our Team</h2>
+            <h2>The Team</h2>
         </center>
-        
-        <div class= "prof">
-             <img class="prof-pic" src="images/profiles/james.png">
-            <h3>James Larsen</h3>
-            <p class= prof-paragraph><strong>James</strong> worked for four years in marketing and sales management with Gravity Payments and Vulcan, Inc. He decided to pursue a legal education to facilitate the communication between attorneys and business leaders.
-            <br>
-            <strong>Fun Fact:</strong> Wrote a scene for the TV show “Portlandia” that starred Paul Allen and members of the Portland Trail Blazers which aired in 2014.</p>
-        </div>
 
         <div class= "prof">
             <img class="prof-pic" src="images/profiles/tony.png">
             <h3>Tony Traina</h3>
             <p class= prof-paragraph><strong>Tony</strong> previously worked as a healthcare consultant at Navigant Consulting. He decided to attend law school after realizing no strategy is complete without a holistic understanding of the legal risks associated with an industry.
             <br>
-            <strong>Fun Fact:</strong> Enjoys sushi, kittens, and can rap along to every word of every Kanye West album.</p>
         </div>
 
-        	<center> <!--email subscribe div -->
-            <div class="email-submit">
-                <br/>
-               <center><h1>Stay in the loop</h1></center>
-               <p>Don't have a question, but want to know what counseltree is up to? Subscribe here and we'll keep you up to date on our latest blog posts and new features that can help your business answer even the stickiest legal question.</p>
-                <br/>
-                <!-- Begin MailChimp Signup Form -->
-          <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-           #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-           /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          <div id="mc_embed_signup">
-          <form action="//github.us15.list-manage.com/subscribe/post?u=a8cf89859f81792eddf52167e&amp;id=709a514abe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-             <div id="mc_embed_signup_scroll">
-           <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a8cf89859f81792eddf52167e_709a514abe" tabindex="-1" value=""></div>
-             <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-success"></div>
-             </div>
-          </form>
-          </div>
+        <div class="jumbotron">
+        	<div class="container">
+        		<div class="col-sm-6"><h2 style="color:white">Contact Us</h2>
+        		<h3 style="color:white">Let <strong style="color:lightgreen">counseltree</strong> help.</h3>
+        			<br/>
+        			<p style="color:white">Ask a question and we'll have the information and resources you need to continue running your business within 24 hours.</p>
 
-          <!--End mc_embed_signup-->
-            </center>
+        	</div>
+
+        	<div class="col-sm-6"><form id="formRequest" style="color:lightgray">
+
+        		<div class = "form-group">
+        			<div class="col-sm-6"><label for="name">Name</label>
+        				<input type="text" name="name" id="name" placeholder="Full" class = "col-xs-3 form-control"/></div>
+
+        			<div class="col-sm-6"><label for="email">Email</label>
+        				<input type="text" name="email" id="email" placeholder="you@email.com" class="col-xs-3 form-control"/>
+        		</div>
+        		</div>
+
+        		<div class = "form-group">
+        			<div class="col-sm-6"><label>Your Company</label>
+        				<input type="text" name="role" id="role" placeholder="Company Name" class = "form-control"/></div>
+
+
+        			<div class="col-sm-6"><label>Phone</label>
+        				<input type="tel" name="phone" id="phone" maxlength="10" placeholder="Digits only" class="form-control"/></div>
+        		</div>
+
+        			<div class="form-group">
+        			  <div class = "col-sm-12">
+        				<label for="comment">What can we help you with today?</label>
+        				  <textarea name="question" id="question" form="formRequest" rows="4" placeholder="Write your question here..." class="form-control"></textarea></div></div>
+
+        			<div class = "form-group">
+        				<div class = "col-sm-12">
+        				<label>Other info about your business (e.g. size, industry, etc.)</label>
+        					<input type="text" name="other" id="other" placeholder="Other" class = "form-control"/>
+        				<p style="font-size:12px">The more information you provide, the better legal information we'll provide.<br>
+        					Have a question about your Terms of Use or Privacy Policy? Include a link and we can help.</p>
+        				</div></div>
+
+        			<center>
+        			<input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Submit" class = "btn btn-success"/>
+        			<input type="reset" value="Reset" class = "btn btn-default"/>
+        			</center>
+
+        		</form>
+        		</div>
+        	</div>
+        </div>
