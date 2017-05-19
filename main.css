@@ -36,7 +36,7 @@
 		background-size: 100%;
 		width: 100%;
     margin-top:-20px;
-    height:400px;
+    height:410px;
 }
 
 .jumbotron .btn {
@@ -81,12 +81,6 @@ footer {
     text-align: center;
 }
 
-iframe {
-	margin: 10px auto;
-	display:block;
-
-}
-
 .jumbotron-about {
     background-image: url("images/jumbotron-about.jpg");
 		width: 100%;
@@ -97,7 +91,6 @@ iframe {
 		color:white;
 
 }
-
 
 .about {
     text-indent: 50px;
