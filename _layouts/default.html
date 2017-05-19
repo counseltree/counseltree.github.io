@@ -56,6 +56,11 @@
               {% else %}
               <li><a href="about.html">About Us</a></li>
               {% endif %}
+							{% if page.active == "Forms" %}
+							<li class="active"><a href="about.html">Forms</a></li>
+							{% else %}
+							<li><a href="about.html">Forms</a></li>
+							{% endif %}
 
             </ul>
 
@@ -68,7 +73,7 @@
       <footer style="color:white"> <!-- Footer -->
         <div class="container">
 		  <center>
-			  <a href="http://counseltree.github.io/about.html"><h4>About Us</h4></a><a href="https://medium.com/@counseltree"><h4><i class="fa fa-medium" aria-hidden="true"></i> Blog</h4></a><a href="mailto:counseltreelegal@gmail.com"><h4>Contact</h4></a>
+			  <a href="http://counseltree.github.io/about.html"><h4>About Us</h4></a><a href="https://medium.com/counseltree"><h4><i class="fa fa-medium" aria-hidden="true"></i> Blog</h4></a><a href="mailto:counseltreelegal@gmail.com"><h4>Contact</h4></a>
 			  <img src="images/counseltree_white.png" height="50" width="60">
 			  <br/>
 			  <br/>
