@@ -17,6 +17,9 @@
 	font-size: 16px;
 }
 
+.btn-success {
+	padding: 10px;
+}
 
 /* Custom page footer */
 .footer {
